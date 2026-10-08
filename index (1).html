@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubo — a personal launcher for Java Edition</title>
+<meta name="description" content="Kubo is a personal, non-commercial desktop launcher for Minecraft Java Edition. Microsoft sign-in only; a licensed account is required to play.">
+<style>
+  :root { --bg:#0a0a0c; --panel:#16161a; --line:#26262c; --text:#ececf0; --muted:#8d8d97; --glow:#8b7cff; --glow2:#4fe0e8; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 "Segoe UI", system-ui, sans-serif;
+    background-image: radial-gradient(ellipse at 50% -10%, rgba(139,124,255,.22), transparent 60%); min-height: 100vh; }
+  main { max-width: 680px; margin: 0 auto; padding: 72px 24px 48px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { width: 52px; height: 52px; filter: drop-shadow(0 0 12px rgba(139,124,255,.75)); }
+  h1 { margin: 0; font-size: 44px; letter-spacing: -1px; text-shadow: 0 0 28px rgba(139,124,255,.5); }
+  .lead { color: var(--muted); font-size: 18px; margin: 14px 0 36px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--glow2); margin: 36px 0 10px; font-weight: 600; }
+  ul { padding-left: 20px; margin: 0; } li { margin: 6px 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+  a { color: var(--glow2); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <defs>
+        <linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4fe0e8"/><stop offset="1" stop-color="#8b7cff"/></linearGradient>
+      </defs>
+      <path d="M20 4 35 12.5 20 21 5 12.5z" fill="url(#t)"/>
+      <path d="M5 12.5 20 21v17L5 29.5z" fill="#8b7cff" fill-opacity=".3" stroke="#8b7cff" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M35 12.5 20 21v17l15-8.5z" fill="#4fe0e8" fill-opacity=".15" stroke="#4fe0e8" stroke-width="1.2" stroke-linejoin="round"/>
+      <circle cx="20" cy="21" r="2.2" fill="#fff"/>
+    </svg>
+    <h1>Kubo</h1>
+  </div>
+  <p class="lead">A personal desktop launcher for Minecraft Java Edition, built for private, non-commercial use.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Signs the player in with their Microsoft account (OAuth) and verifies game ownership through the official Xbox Live and Minecraft Services flow.</li>
+    <li>Downloads and launches official game versions, with optional Fabric support.</li>
+    <li>Installs mods from Modrinth into a local game folder.</li>
+  </ul>
+
+  <h2>Licensing and security</h2>
+  <div class="card">
+    A purchased Minecraft Java Edition license is required to play. Kubo does not bypass, disable or weaken any authentication, licensing or security checks, and it does not provide offline or cracked account modes.
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Account tokens are stored only on the user's own computer. Kubo has no servers, does not collect analytics and does not send personal data to anyone other than Microsoft, Xbox Live and Mojang for sign-in.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+
+  <footer>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</footer>
+</main>
+</body>
+</html>
